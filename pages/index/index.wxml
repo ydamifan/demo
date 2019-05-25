@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+    <picker mode="selector" range='{{express}}' value='{{index}}' bindchange='choose' >
+        <text>请选择快递公司：          {{express[index]}}</text>
+    </picker>
+   <input placeholder="请输入运单号" bindinput='input'/>
+   <button type="primary" bindtap="btnClick" size='mini'>查询</button>
+   <view wx:for="{{expressInfo.result.list}}">
+      {{item.remark}} - 【{{item.datetime}}】
+      <view class="divLine"></view>
+   </view>
+</view>

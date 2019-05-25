@@ -1,0 +1,15 @@
+input{
+  border: 1px rgba(0, 0, 0, 0.404) solid;
+  width: 80%;
+  margin-top: 20px;
+  padding:5px;
+}
+button{
+  width: 40%;
+  margin-top:20px;
+}
+.divLine{
+ background: rgb(112, 112, 111);
+ width: 100%;
+ height: 5rpx;
+}
